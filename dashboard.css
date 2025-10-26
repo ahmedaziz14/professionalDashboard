@@ -1,0 +1,112 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    background-color: #001;
+    display: flex;
+}
+.img-box{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+    
+}
+.img-box img {
+    width: 100%;
+}
+.profile{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.menu{
+    background-color: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: .5px;
+
+}
+.menu:hover{
+    width: 260px;
+}
+ul{
+    list-style: none ;
+    position: relative;
+    height: 95%;
+} 
+ul li a {
+    display: block;
+    border-radius: 8px;
+    
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: .5s;
+}
+ul li a:hover , .active{
+    background-color: #ffffff55;
+
+}
+.logout{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    
+
+}
+.logout a {
+    background-color: red;
+}
+ul li a i {
+    font-size: 40px;
+}
+.content{
+    margin: 10px;
+    width: 100%;
+}
+.content .title {
+    display: flex;
+    background-color: #0481ff;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding:10px ; 
+    align-items: center;
+    margin: 10px 0px;
+
+}
+.data-info{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.data-info .box{
+    background-color: #123;
+    height: 150px;
+    width: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.data-info .box:hover{
+    background-color: #ffffff55;    
+}
